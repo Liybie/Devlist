@@ -220,7 +220,7 @@ public class DevList extends JFrame {
             switch (action) {
                 case "delete": {
                     model.addRow(data);
-                    // FIX: queue stores {id, priority} -> indices 5 (ID), 4 (Priority)
+                    //Queue stores {id, priority} - indices 5 (ID), 4 (Priority)
                     taskQueue.offer(new Object[]{data[5], data[4]});
                     inProgress++;
                     break;
